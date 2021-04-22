@@ -411,13 +411,14 @@ flex-wrap: nowrap;
             
             .phone {
                 height:20rem;
+                margin-left:11rem;
             }
 
 
             .stranger_box {
                
           
-                left:-17%;
+                left:27%;
              
                
             }
@@ -429,6 +430,11 @@ flex-wrap: nowrap;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+            }
+
+
+            .watch_section img {
+                height:20rem;
             }
 
 
