@@ -48,7 +48,8 @@ h3
 
 
 
-h2,h3 {   font-size: 1.5rem;
+h2,h3 {   
+    font-size: 1.5rem;
     padding:0.9rem;
     margin: 0;
     text-align: center;
@@ -59,11 +60,12 @@ h2,h3 {   font-size: 1.5rem;
 /* first section */
 
 .unlimited_section {
-   background-image: url(Images/img1.jpg);
-   background-color: var(--light_black);
+   background-image: url(Images/img1.jpg); 
+
+    background-color: var(--light_black);
    background-blend-mode: multiply;
-   height:100vh;
-   min-height: 120vh;
+  
+   
    
 
 }
@@ -102,6 +104,7 @@ header > a:nth-of-type(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     
 }
@@ -450,6 +453,37 @@ flex-wrap: nowrap;
                
             
             }
+
+            .unlimited_section {
+                
+                
+             
+                
+            
+                
+             
+             }
+
+
+
+            .unlimited_box {
+                
+             display:flex;
+             flex-direction: column;
+             justify-content: center;
+            
+             
+               
+                
+             
+             }
+
+             .buttons_div button {
+                 font-size: 2rem;
+             }
+        
+
+             
 
 
 
