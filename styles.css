@@ -65,10 +65,16 @@ h2,h3 {
 
     background-color: var(--light_black);
    background-blend-mode: multiply;
+ 
   
    
    
 
+}
+
+.unlimited_box {
+    padding-top:1rem;
+    padding-bottom:8rem;
 }
 
 
@@ -158,11 +164,33 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:2rem;
 }
 
 .enjoy_section img {
     height:14rem;
+    padding: 1rem;
 }
+
+
+.enjoy_image_vid_box {
+position:relative
+}
+
+
+.enjoy_vid {
+
+  position: absolute;
+  left:10%;
+  top:6%;
+  width: 80%;
+
+
+  z-index: -1;
+
+ 
+}
+
 
 
 
@@ -172,6 +200,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:4rem;
 }
 
 
@@ -232,11 +261,38 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:2rem;
+}
+
+
+.watch_img_vid_box{
+    position: relative;
 }
 
 .watch_section img {
     height:14rem;
+    z-index: 9999;
+  
 }
+
+.watch_vid {
+ object-fit: contain;
+  position: absolute;
+  left:20%;
+  top:10%;
+  width: 60%;
+  z-index: -1;
+
+ 
+}
+
+
+
+
+
+
+
+
 
 
 /* frequently */
@@ -246,6 +302,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2rem ;
    
     
 }
@@ -261,9 +318,10 @@ hr {
   
   
     
-
    
 }
+
+
 
 
 
@@ -550,21 +608,34 @@ flex-wrap: nowrap;
                 
             }
 
+
+            /* Enjoy */
+
+            .enjoy_section img {
+                height:20rem;
+              
+            }
+
             .enjoy_section {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
+                padding:5rem;
+               
             }
             
           
+
+            /* donwload */
 
 
             .download_section {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
+                padding:5rem;
             }
             
             .phone {
@@ -582,12 +653,14 @@ flex-wrap: nowrap;
             }
 
 
+            /* watch */
 
             .watch_section {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
+                padding:5rem;
             }
 
 
@@ -596,6 +669,7 @@ flex-wrap: nowrap;
             }
 
 
+            /* frequently */
             .link_ul{
                 padding:3rem !important;
                 list-style: none;
