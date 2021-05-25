@@ -9,7 +9,7 @@
     --black-color: black;
     --orange-color:#e50914;
     --light_black:#333;
-    --blue_color: #0DBFB3;
+    --blue_color: #4FC6C1;
 
 }
 
@@ -285,7 +285,7 @@ text-decoration: none;
     padding-top: 2rem ;
     color:black;
     
-    background-image: url(./Images/faq1.jpeg);
+    background-image: url(./Images/another.jpg);
    
    
     
@@ -490,11 +490,11 @@ flex-wrap: nowrap;
 
 
 
-/* footer */
+/* Footer */
 
 .footer_section {
 
-    background-image: url(/Images/footerimg.jpeg);
+   background-color:#E69223 ;
     background-repeat: no-repeat;
     background-size: cover;
     color:black;
