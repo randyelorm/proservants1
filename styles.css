@@ -9,14 +9,16 @@
     --black-color: black;
     --orange-color:#e50914;
     --light_black:#333;
+    --blue_color: #0DBFB3;
+
 }
 
 html {
     box-sizing: border-box;
-    background-color: var(--black-color) ;
+    background-color:black ;
     color:white;
     min-width: 300px;
-    max-width: 100%;
+   width: 100% !important;
     overflow-x: hidden;
   
 
@@ -28,10 +30,11 @@ body {
 
 margin: 0;
 padding: 0;
-max-width: 100%;
+width: 100%;
 min-width: 300px;
-
 overflow-x: hidden;
+
+
 
 
    
@@ -58,24 +61,19 @@ h2,h3 {
 
 
 
-/* first section */
+/* Same day delivery */
 
 .unlimited_section {
-   background-image: url(Images/img1.jpg); 
-
-    background-color: var(--light_black);
-   background-blend-mode: multiply;
+   background-image: url(Images/1pro.png); 
+   background-color: var(--light_black);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   
  
-  
-   
-   
-
 }
 
-.unlimited_box {
-    padding-top:1rem;
-    padding-bottom:8rem;
-}
+
 
 
 
@@ -98,8 +96,8 @@ height:2rem;
 header > a:nth-of-type(2){
     color:white;
     text-decoration: none;
-    background-color: var(--orange-color);
-    border: 1px solid var(--orange-color);
+    background-color: var(--blue_color);
+    border: 1px solid;
     border-radius: 0.2rem;
     padding:0.4rem;
 
@@ -110,7 +108,13 @@ header > a:nth-of-type(2){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    color:black;
+    padding-top:1rem;
+    padding-bottom:8rem;
+    z-index: 9999;
+    padding-left: 1rem;
+    
     
 
     
@@ -131,13 +135,15 @@ input {
     border: none;
     min-width: 300px;
     margin-top: 1rem;
+    border: 1px solid black !important;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2)
     
     
 }
 
 
 .unlimited_box button {
-    background-color:var(--orange-color);
+    background-color:#00acee;
     margin-top: 1rem;
     padding: 1rem;
     color:white;
@@ -157,98 +163,71 @@ hr {
 
 
 
-/* Enjoy section */
+/* Buy or sell*/
 
 .enjoy_section {
+    
+   
+   
+    background-image: url(./Images/visit.png);
+    background-size: cover;
+    height: 50vh;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    
+   
+}
+
+.buy_or_sell {
+   
+   
+}
+
+.buy_or_sell h1, a {
+color:black !important;
+text-decoration: none;
+
+}
+
+.buy_or_sell {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding:2rem;
+    justify-content: center;
+    
+  
+   
 }
 
-.enjoy_section img {
-    height:14rem;
-    padding: 1rem;
+.buy_or_sell h1, a {
+
+color:white;
+text-decoration: none;
+
 }
 
 
-.enjoy_image_vid_box {
-position:relative
-}
 
 
-.enjoy_vid {
-
-  position: absolute;
-  left:10%;
-  top:6%;
-  width: 80%;
-
-
-  z-index: -1;
-
- 
-}
 
 
 
 
 /* Download section */
 .download_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:4rem;
-}
 
-
-
-
-
-.phone_box {
-    position: relative;
-}
-
-.phone {
-    height:15rem;
-}
-
-
-
-
-
-.stranger_box {
     display:flex;
-    border: 1px solid red;
-    justify-content: space-between;
-    align-items: center;
-   text-align: center;  
-   width:20rem;
-    background-color: black;
-    border: 2px solid var(--light_black);
-    border-radius:5px;
-    position: absolute;
-    top: 55%;
-    left:-40%;
-    max-width: 300px;
-    margin: 0px 2rem;
-   
-  
-   
-}
-
-
-
-.gif {
-    height:5rem !important;
-}
-
-.stranger_img{
-    height:5rem ;
+    flex-direction: column;
+    height: 50vh;
+    background-image: url(./Images/testimonial-bg.png);
   
 }
+
+
+
+
 
 
 
@@ -303,6 +282,9 @@ position:relative
     justify-content: space-between;
     align-items: center;
     padding-top: 2rem ;
+    color:black;
+    background-color: white;
+    background-image: url(./Images/faq1.jpeg);
    
     
 }
@@ -327,7 +309,7 @@ position:relative
 
 
 .dropdown {
-    background-color:#333; 
+    background-color:var(--blue_color); 
     max-width: 82.9%;
     margin:auto;
     height:100%;
@@ -356,7 +338,7 @@ position:relative
 
 
 .dropdown2 {
-    background-color:#333; 
+    background-color:var(--blue_color); 
     max-width: 82.9%;
     margin:auto;
     height:100%;
@@ -384,7 +366,7 @@ position:relative
 
 
 .dropdown3 {
-    background-color:#333; 
+    background-color:var(--blue_color); 
     max-width: 82.9%;
     margin:auto;
     height:100%;
@@ -412,7 +394,7 @@ position:relative
 
 
 .dropdown4 {
-    background-color:#333; 
+    background-color:var(--blue_color);  
     max-width: 82.9%;
     margin:auto;
     height:100%;
@@ -438,7 +420,7 @@ position:relative
 
 
 .dropdown5 {
-    background-color:#333; 
+    background-color:var(--blue_color); 
     max-width: 82.9%;
     margin:auto;
     height:100%;
@@ -472,7 +454,7 @@ font-size: 1.2rem;
 font-weight: bold;
 
 margin: 0.3rem 2rem;
-background-color:#303030;
+background-color:var(--blue_color); 
 color:white;
 border: none;
 display: flex;
@@ -520,57 +502,191 @@ flex-wrap: nowrap;
 
 /* footer */
 
-.footer_div{
-  
-}
+.footer_section {
 
-
-
-.top_link {
-    display: inline-block;
+    background-image: url(/Images/footerimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white;
-    text-decoration: none;
-    color:#757575;
-   
-
-}
-
-.link_ul{
-    padding:3rem !important;
-    list-style: none;
-    padding: 0 ;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-   
-
-}
-
-
-
-.link_ul li {
-    padding: 1em;
-}
-
-.link_ul a {
-
-    color:#757575;
-    text-decoration: none;
+    display:flex;
+    padding:1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   
+
+}
+
+.footer_section > * {
+    width: 100%;
 }
 
 
-.net_gh {
-    color:#757575;
+.footer_logo {
+    height:3rem;
+}
+
+.social_media {
+   color:white;
+   font-size: 1.5rem;
+}
+
+
+.connect {
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.company {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+      header img {
+        height:3rem;
+        
+        
+        }
+        
+        
+        header > a:nth-of-type(2){
+            color:white;
+            text-decoration: none;
+            background-color: var(--blue_color);
+            border: 1px solid;
+            border-radius: 0.2rem;
+            padding:0.4rem;
+            font-size: 1rem;
+            
+        
+        }
+
+    .unlimited_section {
+        background-image: url(Images/1pro\ mobilepng.png); 
+        background-color: var(--light_black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+      
+     }
+
+     .unlimited_box{
+         display:flex;
+         color:#f4f5f4;
+        justify-content: center;
+        align-items: center;
+         
+     }
+
+
+
+
+     .enjoy_section {
     
+   
+   
+        background-image: url(./Images/visit\ mob.png);
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    
+  
+    
+    .buy_or_sell h1, a {
+  
+    color:white !important;
+    text-decoration: none;
+    font-size: 3rem;
+    
+    
+    }
+
+    .sign_in {
+
+        font-size: 3 !important;
+        height:2.3rem;
+    }
+
+
+
+    .footer_section {
+
+        background-color: white;
+        color:black;
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      
+    
+    }
+    
+    .footer_section > * {
+        width: 100%;
+    }
+    
+    
+    .footer_logo {
+        height:3rem;
+    }
+    
+    .social_media {
+       color:#777777;
+    }
+
+
+    .footer_section {
+
+        background-color: #767676;
+        color:white;
+        display:flex;
+        padding:1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      
+    
+    }
+
+
+    .social_media {
+        color:white;
+        font-size: 1.5rem;
+     }
+   
+
+
+    
+
+
+
+
 }
-
-
-
-
 
 
 
@@ -580,7 +696,7 @@ flex-wrap: nowrap;
             h1,
             h2,
             h3
-            {   font-size: 3rem;
+            {   font-size: 4.5rem;
                 padding:0.9rem;
                 margin: 0;
                 text-align: center;
@@ -598,6 +714,23 @@ flex-wrap: nowrap;
             }
 
 
+            header img {
+                height:4rem;
+                
+                
+                }
+
+                .sign_in {
+
+                    font-size: 3 !important;
+                    height:2rem;
+                }
+
+            .mail1_nd_btn_box button {
+                font-size: 1.5rem;
+            }
+
+
 
 
             .unlimited_box {
@@ -608,34 +741,97 @@ flex-wrap: nowrap;
                 
             }
 
-
-            /* Enjoy */
-
-            .enjoy_section img {
-                height:20rem;
-              
+            input {
+   
+                padding: 1rem;
+                border: none;
+                min-width: 500px;
+                margin-top: 1rem;
+                border: 1px solid black !important;
+                box-shadow: 0 0 1em rgba(0,0,0,0.2);
+                font-size: 1.5rem;
+            
             }
+
+
+            /* Buy & Sell */
+
+            
+            
 
             .enjoy_section {
+    
+   
+   
                 display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
-                padding:5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                
+            }
+
+            .buy_or_sell {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: baseline !important;
+                
+              
                
             }
+
+            .buy_or_sell h1,a  {
+             
+                color:black;
+
+              
+               
+            }
+
+              .buy_or_sell h1  {
+             
+             
+                font-size: 4rem;
+
+              
+               
+            }
+
+
+            .buy_or_sell a  {
+             
+                font-size: 2.5rem;
+                color:var(--blue_color) !important;
+              
+               
+            }
+
+            .buy_or_sell a:hover  {
+             
+                text-decoration: underline;
+                
+              
+               
+            }
+
+
+
+           
             
+                
+               
+            
+
+            
+
+          
           
 
             /* donwload */
 
 
             .download_section {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
-                padding:5rem;
+               
             }
             
             .phone {
